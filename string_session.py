@@ -23,7 +23,7 @@ while True:
             )
 
             print(
-                "Thanks for Choosing MafiaBot Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
+                "Thanks for Choosing ShinchanBot Have A Good Time....Note That When You Terminate the Old Session ComeBack And Genrate A New String Session Old One Wont Work"
             )
     except:
         print("")
