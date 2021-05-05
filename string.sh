@@ -23,7 +23,7 @@ echo """
            ___) |  _  || || |\  | |___|  _  |/ ___ \| |\  |
           |____/|_| |_|___|_| \_|\____|_| |_/_/   \_\_| \_|
                      © 𝙻𝙴𝙶𝙴𝙽𝙳𝙰𝚁𝚈_𝙰𝙵_Shinchanbot™                       
-                         @Shinchan_USERBOT
+                         @Shinchan_USERBOT .
 """
 
 python3 string_session.py
