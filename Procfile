@@ -1,1 +1,1 @@
-worker: bash shinchanbot
+worker: bash mafiabot
