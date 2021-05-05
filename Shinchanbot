@@ -37,7 +37,7 @@ _set_bot () {
     rm -rf "$zippath"
     sleep 5
     cd $MAFIAPATH
-    echo "    Starting Shinchanbot    "
+    echo "    Starting ShinchanBot    "
     echo "
 ‌‌‎           ____  _   _ ___ _   _  ____ _   _    _    _   _ 
           / ___|| | | |_ _| \ | |/ ___| | | |  / \  | \ | |
