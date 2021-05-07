@@ -4,29 +4,29 @@
 _get_repolink () {
     local regex
     regex='(https?)://github.com/.+/.+'
-    if [[ $MAFIA_REPO == "mafiabot" ]]
+    if [[ $SHINCHAN_REPO == "shinchanbot" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0gxTTRONUhVMFAvTUFGSUEtVVNFUkJPVC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $MAFIA_REPO == "MAFIABOT" ]]
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1NoaW5jaGFuNzIyMi9TSElOQ0hBTi1CT1QtTE9WRQ==" | base64 -d
+    elif [[ $SHINCHAN_REPO == "SHINCHANBOT" ]]
     then
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0gxTTRONUhVMFAvTUFGSUEtVVNFUkJPVC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
-    elif [[ $MAFIA_REPO =~ $regex ]]
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1NoaW5jaGFuNzIyMi9TSElOQ0hBTi1CT1QtTE9WRQ==" | base64 -d
+    elif [[ $SHINCHAN_REPO =~ $regex ]]
     then
-        if [[ $MAFIA_REPO_BRANCH ]]
+        if [[ $SHINCHAN_REPO_BRANCH ]]
         then
-            echo "${MAFIA_REPO}/archive/${MAFIA_REPO_BRANCH}.zip"
+            echo "${SHINCHAN_REPO}/archive/${SHINCHAN_REPO_BRANCH}.zip"
         else
-            echo "${MAFIA_REPO}/archive/master.zip"
+            echo "${SHINCHAN_REPO}/archive/master.zip"
         fi
     else
-        echo "aHR0cHM6Ly9naXRodWIuY29tL0gxTTRONUhVMFAvTUFGSUEtVVNFUkJPVC9hcmNoaXZlL21hc3Rlci56aXA=" | base64 -d
+        echo "aHR0cHM6Ly9naXRodWIuY29tL1NoaW5jaGFuNzIyMi9TSElOQ0hBTi1CT1QtTE9WRQ==" | base64 -d
     fi
 }
 
 
 _set_bot () {
     local zippath
-    zippath="mafiabot.zip"
+    zippath="SHINCHAN-BOT-LOVE.zip"
     echo "  Downloading source code ..."
     wget -q $(_get_repolink) -O "$zippath"
     echo "  Unpacking Data ..."
