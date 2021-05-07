@@ -14,7 +14,7 @@ _get_repolink () {
     then
         if [[ $SHINCHAN_REPO_BRANCH ]]
         then
-            echo "${SHINCHAN_REPO}/archive/${SHINCHAN_REPO_BRANCH}.zip"
+            echo "${SHINCHAN_REPO}/archive/${MAFIA_REPO_BRANCH}.zip"
         else
             echo "${SHINCHAN_REPO}/archive/master.zip"
         fi
@@ -26,7 +26,7 @@ _get_repolink () {
 
 _set_bot () {
     local zippath
-    zippath="SHINCHAN-BOT-LOVE.zip"
+    zippath="mafiabot.zip"
     echo "  Downloading source code ..."
     wget -q $(_get_repolink) -O "$zippath"
     echo "  Unpacking Data ..."
