@@ -26,9 +26,6 @@ Shinchanbot made by @Shinchan7222. Supported by respective mafiabot owner @H1M4N
 
 # FORK AT YOUR OWN RISK
 
-<details>
-
-  <summary> • INSTALLING • </summary>
 
 ### The Easy Way
 
